@@ -65,4 +65,4 @@ parser.add_argument('--exclude', type=str, nargs='+', help='Words to exclude.')
 
 args = parser.parse_args()
 
-wwc = WikiWordCounter(args.exclude).printTopWords(args.top)
+WikiWordCounter(args.exclude).printTopWords(args.top)
